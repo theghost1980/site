@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { FaGuitar, FaMicrophone } from 'react-icons/fa';
 import { GiDrum } from 'react-icons/gi';
 import { PiGuitarFill } from 'react-icons/pi';
-import { GiFlute } from "react-icons/gi";
 
 // Definimos la estructura de datos para un músico
 interface Musician {
