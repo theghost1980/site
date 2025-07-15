@@ -1,9 +1,8 @@
 export function TourSection() {
   const tourDates = [
     { date: '02 AGO, 2025', city: 'Barquisimeto, VE', venue: 'Apertura Negocio Carolinita' },
-    // { date: '28 DIC, 2024', city: 'Barcelona, ES', venue: 'Palau Sant Jordi' },
-    // { date: '15 ENE, 2025', city: 'Ciudad de México, MX', venue: 'Foro Sol' },
-    // { date: '20 ENE, 2025', city: 'Bogotá, CO', venue: 'Movistar Arena' },
+    { date: '28 OCT, 2025', city: 'Muddenahalli, IN', venue: 'Ashram Muddenahalli' },
+    { date: '23 NOV, 2025', city: 'Muddenahalli, IN', venue: 'Ashram Muddenahalli' },
   ];
 
   return (
