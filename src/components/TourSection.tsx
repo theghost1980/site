@@ -1,9 +1,9 @@
 export function TourSection() {
   const tourDates = [
-    { date: '25 DIC, 2024', city: 'Madrid, ES', venue: 'Wizink Center' },
-    { date: '28 DIC, 2024', city: 'Barcelona, ES', venue: 'Palau Sant Jordi' },
-    { date: '15 ENE, 2025', city: 'Ciudad de México, MX', venue: 'Foro Sol' },
-    { date: '20 ENE, 2025', city: 'Bogotá, CO', venue: 'Movistar Arena' },
+    { date: '02 AGO, 2025', city: 'Barquisimeto, VE', venue: 'Apertura Negocio Carolinita' },
+    // { date: '28 DIC, 2024', city: 'Barcelona, ES', venue: 'Palau Sant Jordi' },
+    // { date: '15 ENE, 2025', city: 'Ciudad de México, MX', venue: 'Foro Sol' },
+    // { date: '20 ENE, 2025', city: 'Bogotá, CO', venue: 'Movistar Arena' },
   ];
 
   return (
