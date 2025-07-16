@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaGuitar, FaMicrophone } from 'react-icons/fa';
 import { GiDrum } from 'react-icons/gi';
 import { PiGuitarFill } from 'react-icons/pi';
+import { GiFlute } from "react-icons/gi";
 
 // Definimos la estructura de datos para un músico
 interface Musician {
@@ -34,7 +35,7 @@ const musicians: Musician[] = [
   {
     id: 2,
     name: 'Hanuman Sánchez',
-    role: 'Multi-instrumentista, Cantente y Percusionista Profesional',
+    role: 'Multi-instrumentista, Cantante y Percusionista Profesional',
     bio: 'Hijo de padres músicos, egresado del sistema de orquestas de la Fundación Conservatorio "Vicente Emilio Sojo". Ha participado activamente en muchos escenarios y podemos decir que su corazon late al ritmo latino y tradicional.',
     avatar: '/avatars/hanuman.jpeg',
     instruments: ['voice', 'percussion', 'cuatro'],
@@ -44,19 +45,27 @@ const musicians: Musician[] = [
     name: 'Guillermo Tona',
     role: 'Multi-instrumentista y Cantante',
     bio: 'Proveniente de una larga tradición de familia de músicos, ha compartido con nosotros desde que tengo memoria musical. Guillermo es cantante, compositor y ha participado en varias grabaciones profesionales.',
-    avatar: '/avatars/guillermo.JPG',
+    avatar: '/avatars/guillermo.jpeg',
     instruments: ['voice', 'guitar', 'cuatro'],
   },
   {
     id: 4,
     name: 'Williams Reinoso',
     role: 'Multi-instrumentista y Cantante',
-    bio: 'Es un música con amplia trayectoria que ha pertenecido a muchas agrupaciones en Barquisimeto, su ciudad natal. Además de apoyarnos con su oido absoluto, nos deleita con el juego en las cuerdas como ningún otro.',
+    bio: 'Es un músico con amplia trayectoria que ha pertenecido a muchas agrupaciones en Barquisimeto, su ciudad natal. Además de apoyarnos con su oido absoluto, nos deleita con el juego en las cuerdas como ningún otro.',
     avatar: '/avatars/williams.JPG',
     instruments: ['voice', 'guitar', 'cuatro'],
   },
+  {
+    id: 5,
+    name: 'Rama Tona',
+    role: 'Flauta Traversa y Cantante',
+    bio: 'Músico egresado del sistema nacional de orquestas de Venezuela. Cuenta con amplia trayectoria a nivel musical y proviene de una familia de músicos. Nos deleita con su amplio desempeño para tocar y cantar multiples generos y estilos musicales.',
+    avatar: '/avatars/rama.jpeg',
+    instruments: ['flute','voice'],
+  },
   // Placeholders para los otros músicos
-  ...Array.from({ length: 3 }, (_, i) => ({
+  ...Array.from({ length: 2 }, (_, i) => ({
     id: i + 1,
     name: `Músico ${i + 2}`,
     role: 'Músico',
@@ -72,6 +81,7 @@ const instrumentIcons: Record<string, React.ReactNode> = {
   guitar: <FaGuitar title="Guitarra" />,
   percussion: <GiDrum title="Percusión" />,
    cuatro: <PiGuitarFill title="Cuatro" />,
+   flute: <GiFlute title="Flauta" />,
 };
 
 // Mapeo de nombres de instrumentos a enlaces de Wikipedia
@@ -80,6 +90,7 @@ const instrumentWikiLinks: Record<string, string> = {
   guitar: 'https://es.wikipedia.org/wiki/Guitarra',
   percussion: 'https://es.wikipedia.org/wiki/Instrumento_de_percusi%C3%B3n',
   cuatro: 'https://es.wikipedia.org/wiki/Cuatro_(instrumento)',
+  flute: 'https://es.wikipedia.org/wiki/Flauta',
 };
 
 export function AboutSection() {
