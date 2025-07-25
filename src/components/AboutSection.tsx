@@ -64,15 +64,22 @@ const musicians: Musician[] = [
     avatar: '/avatars/rama.jpeg',
     instruments: ['flute','voice'],
   },
-  // Placeholders para los otros músicos
-  ...Array.from({ length: 2 }, (_, i) => ({
-    id: i + 1,
-    name: `Músico ${i + 2}`,
-    role: 'Músico',
-    bio: `Esta es la biografía del Músico ${i + 2}. Un apasionado artista que ha dedicado su vida a la música, aportando un sonido único y una energía inigualable a la banda.`,
-    avatar: `https://api.dicebear.com/8.x/avataaars/svg?seed=Musico${i + 2}`,
-    instruments: [],
-  })),
+  {
+    id: 6,
+    name: 'Juan S. Reinoso',
+    role: 'Flauta Dulce, percusión y Cantante',
+    bio: 'Jóven músico que pertenece al sistema de orquestas juveniles del Estado Lara, Venezuela. Juan proviene de una larga tradición de músicos y nos deleita con su flauta, acompañamientos de percusión y su voz.',
+    avatar: '/avatars/juan.jpeg',
+    instruments: ['flute','voice', 'percussion'],
+  },
+   {
+    id: 7,
+    name: 'Nadir Sánchez',
+    role: 'Guitarra y Cantante',
+    bio: 'Músico de larga trayectoria musical, compositor y arreglista. Nadir ha dedicado su vida a cantar la música que nos conecta con lo divino, en todas sus formas y nombres. Ha participado en diferentes agrupaciones y ha grabado varios albumes de World Music.',
+    avatar: '/avatars/nadir.jpeg',
+    instruments: ['guitar','voice'],
+  },
 ];
 
 // Mapeo de nombres de instrumentos a componentes de íconos
