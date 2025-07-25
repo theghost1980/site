@@ -68,7 +68,7 @@ const musicians: Musician[] = [
     id: 6,
     name: 'Juan S. Reinoso',
     role: 'Flauta Dulce, percusión y Cantante',
-    bio: 'Jóven músico que pertenece al sistema de orquestas juveniles del Estado Lara, Venezuela. Juan proviene de una larga tradición de músicos y nos deleita con su flauta, acompañamientos de percusión y su voz.',
+    bio: 'Jóven músico que pertenece al sistema de orquestas juveniles del Estado Lara en su sistema de iniciación musical Simón Bolívar, Venezuela. Juan proviene de una larga tradición de músicos y nos deleita con su flauta, acompañamientos de percusión y su voz.',
     avatar: '/avatars/juan.jpeg',
     instruments: ['flute','voice', 'percussion'],
   },
