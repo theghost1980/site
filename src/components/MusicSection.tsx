@@ -27,6 +27,14 @@ export function MusicSection({ audioRef, setIsPlaying }: MusicSectionProps) {
         <p className="mb-4 text-center text-lg text-gray-300">O escúchanos desde Youtube:</p>
         <iframe
           className="aspect-video w-full rounded-xl shadow-lg"
+          src="https://www.youtube.com/embed/uET3TxyTk_s?si=_ztlbEQNNYXAy5mJ"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+        <iframe
+          className="aspect-video w-full rounded-xl shadow-lg"
           src="https://www.youtube.com/embed/g0wOBEAmc8I?si=Z4sAYKbaWePn5_M-"
           title="YouTube video player"
           frameBorder="0"
